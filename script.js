@@ -2,6 +2,7 @@ const container = document.querySelector("#container");
 const button = document.querySelector('.setGrid');
 
 button.addEventListener('click', () => {
+    container.innerHTML = '';
     const gridSize = +prompt('Enter Grid Size');
     
 for (let i = 0; i < gridSize; i++) {
