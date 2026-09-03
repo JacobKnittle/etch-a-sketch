@@ -6,8 +6,15 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.setGrid {
+    display: block;
+    margin-top: 100px;
+    padding: 8px 24px;
 }
 
 #container {
@@ -16,10 +23,10 @@ body {
     margin-top: 100px;
     width: 700px;
     height: 700px;
+    
 }
 
 .square {
     border: 1px solid black;
-    height: calc(100% / 16);
-    width: calc(100% / 16)
+    flex: 1 1 auto;
 }

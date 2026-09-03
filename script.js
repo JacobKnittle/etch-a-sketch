@@ -1,10 +1,15 @@
 const container = document.querySelector("#container");
+const button = document.querySelector('.setGrid');
 
-// create 16 by 16 grid of square divs
-for (let i = 0; i < 16; i++) {
-    for (let j = 0; j < 16; j++) {
+button.addEventListener('click', () => {
+    const gridSize = +prompt('Enter Grid Size');
+    
+for (let i = 0; i < gridSize; i++) {
+    for (let j = 0; j < gridSize; j++) {
         const square = document.createElement('div');
         square.classList.add('square');
+        square.style.height = `calc(${100}% / ${gridSize}`;
+        square.style.width = `calc(${100}% / ${gridSize})`;
         square.addEventListener('mouseenter', () => {
             square.style.backgroundColor = 'black'
         })
@@ -12,4 +17,6 @@ for (let i = 0; i < 16; i++) {
         
     }
 }
+
+})
 
