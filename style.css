@@ -4,12 +4,20 @@
     box-sizing: border-box;
 }
 
-.container {
+body {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
 }
 
 .square {
     border: 1px solid black;
-    width: 100px;
     height: 100px;
+    width: 100px;
 }
